@@ -1,7 +1,7 @@
 {
-  "name": "ts-course",
+  "name": "typescript",
   "version": "1.0.0",
-  "description": "tamplate",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "tsc --watch",
@@ -11,10 +11,6 @@
   "author": "Aleksander <icegouse@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^4.7.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "TypeScript"
+    "typescript": "^5.2.2"
   }
 }
