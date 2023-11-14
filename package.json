@@ -1,0 +1,20 @@
+{
+  "name": "ts-course",
+  "version": "1.0.0",
+  "description": "tamplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Aleksander <icegouse@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TypeScript"
+  }
+}
