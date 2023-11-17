@@ -23,7 +23,24 @@ let mm = 1;
 let xx = 2;
 if (typeof xx === "string")
     xx.toUpperCase();
-function foo(s) {
-    console.log(s);
+// basic function
+const sum2 = (a, b) => a + b;
+function sum1(a, b) {
+    return a + b;
 }
-foo('foo');
+console.log(sum1(2, 2));
+// функция ничего не вохоращает 
+function logo(user, userId) {
+    console.log(user + ' - ' + userId);
+}
+logo('Alex', 200);
+// функция не завершится 
+function crash() {
+    throw new Error('crash');
+}
+let nums = [1, 2, 3, 4, 5];
+function avarage(...nums) {
+    const sum = nums.reduce((current, total) => current + total, 0);
+    return sum / nums.length;
+}
+console.log(avarage());

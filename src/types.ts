@@ -30,9 +30,36 @@ let mm: any = 1;
 let xx: unknown = 2;
 if (typeof xx === "string") xx.toUpperCase();
 
-function foo(s: string): void {
-    console.log(s);
+
+// basic function
+const sum2 = (a: number, b: number): number => a + b;
+
+function sum1(a: number, b: number): number {
+    return a + b;
+}
+
+console.log(sum1(2, 2));
+
+// функция ничего не вохоращает 
+function logo(user: string, userId?: number): void {
+    console.log(user + ' - ' + userId);
 
 }
 
-foo('foo');
+logo('Alex', 200);
+
+// функция не завершится 
+function crash(): never {
+    throw new Error('crash')
+}
+
+
+let nums = [1, 2, 3, 4, 5];
+
+function avarage(...nums: number[]) {
+    const sum = nums.reduce((current, total) => current + total, 0)
+    return sum / nums.length;
+}
+
+console.log(avarage());
+
