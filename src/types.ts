@@ -82,3 +82,27 @@ const car: Car = {
 car.wheels = 10;
 car.go = true;
 console.log(car);
+
+// Обьекты как параметры функции 
+function printPoint(point: { x: number, y: number }): void {
+    console.log(`Cokcss is x ${point.x} and y ${point.y} `);
+}
+
+const obj = {
+    x: 1,
+    y: 2
+}
+
+printPoint(obj);
+
+function printName(user: {
+    firstName: string,
+    lastName: string
+}): void {
+    if (user) {
+        console.log('Hello', user.firstName.toUpperCase());
+        console.log('Nice to meet you Mr', user.lastName.toUpperCase());
+    }
+}
+
+console.log(printName({ firstName: 'Mikhail', lastName: 'Broun' }))
