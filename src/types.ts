@@ -54,12 +54,10 @@ function crash(): never {
 }
 
 
-let nums = [1, 2, 3, 4, 5];
-
-function avarage(...nums: number[]) {
+function avarage(nums: number[]) {
     const sum = nums.reduce((current, total) => current + total, 0)
     return sum / nums.length;
 }
 
-console.log(avarage());
+console.log(avarage([1, 2, 3, 4, 5]));
 

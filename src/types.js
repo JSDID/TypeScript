@@ -38,9 +38,8 @@ logo('Alex', 200);
 function crash() {
     throw new Error('crash');
 }
-let nums = [1, 2, 3, 4, 5];
-function avarage(...nums) {
+function avarage(nums) {
     const sum = nums.reduce((current, total) => current + total, 0);
     return sum / nums.length;
 }
-console.log(avarage());
+console.log(avarage([1, 2, 3, 4, 5]));
