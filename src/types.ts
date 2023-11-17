@@ -61,3 +61,24 @@ function avarage(nums: number[]) {
 
 console.log(avarage([1, 2, 3, 4, 5]));
 
+
+// object 
+
+interface Car {
+    wheels: number;
+    brand: string;
+    type: string;
+    isNew?: boolean;
+    [key: string]: unknown;
+}
+
+const car: Car = {
+    wheels: 4,
+    brand: "BMW",
+    type: "Sedan",
+    isNew: false,
+}
+
+car.wheels = 10;
+car.go = true;
+console.log(car);

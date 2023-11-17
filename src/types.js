@@ -43,3 +43,12 @@ function avarage(nums) {
     return sum / nums.length;
 }
 console.log(avarage([1, 2, 3, 4, 5]));
+const car = {
+    wheels: 4,
+    brand: "BMW",
+    type: "Sedan",
+    isNew: false,
+};
+car.wheels = 10;
+car.go = true;
+console.log(car);
