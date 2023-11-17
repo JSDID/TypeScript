@@ -1,10 +1,12 @@
 "use strict";
 // numbers
 let age = 42;
-// string
+let x = 10.5;
+let y = 190239;
+console.log(x);
+console.log(y);
 let str;
 str = 'John';
-// let d = str1 + symb
 // boolean
 let o = true;
 o = false;
@@ -17,13 +19,11 @@ const num = 108;
 const str2 = 'str';
 // universal
 let mm = 1;
-mm = 'str';
-mm = [];
-mm.toUpperCase();
+// неизвестный
 let xx = 2;
 if (typeof xx === "string")
     xx.toUpperCase();
-function foo() {
-    console.log("Hello");
+function foo(s) {
+    console.log(s);
 }
-foo();
+foo('foo');
