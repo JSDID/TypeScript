@@ -5,6 +5,11 @@ let x = 10.5;
 let y = 190239;
 console.log(x);
 console.log(y);
+const numbers = [1, 2, 3, 5.6];
+console.log(numbers);
+const strs = [];
+strs.push('araay');
+console.log(strs);
 let str;
 str = 'John';
 // boolean
@@ -52,6 +57,9 @@ const car = {
 car.wheels = 10;
 car.go = true;
 console.log(car);
+const cars = [];
+cars.push({ brand: 'Audi', wheels: 3, type: '' });
+console.log(cars);
 // Обьекты как параметры функции 
 function printPoint(point) {
     console.log(`Cokcss is x ${point.x} and y ${point.y} `);
@@ -68,3 +76,8 @@ function printName(user) {
     }
 }
 console.log(printName({ firstName: 'Mikhail', lastName: 'Broun' }));
+function printArr(arr) {
+    arr.forEach((element, index) => {
+        console.log(element, index);
+    });
+}

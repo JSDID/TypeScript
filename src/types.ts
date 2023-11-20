@@ -7,6 +7,14 @@ let y: number = 190239;
 console.log(x);
 console.log(y);
 
+const numbers: Array<number> = [1, 2, 3, 5.6];
+console.log(numbers);
+
+const strs: Array<string> = [];
+strs.push('araay');
+console.log(strs);
+
+
 let str: string;
 str = 'John';
 
@@ -83,6 +91,10 @@ car.wheels = 10;
 car.go = true;
 console.log(car);
 
+const cars: Car[] = [];
+cars.push({ brand: 'Audi', wheels: 3, type: '' });
+console.log(cars);
+
 // Обьекты как параметры функции 
 function printPoint(point: { x: number, y: number }): void {
     console.log(`Cokcss is x ${point.x} and y ${point.y} `);
@@ -106,3 +118,13 @@ function printName(user: {
 }
 
 console.log(printName({ firstName: 'Mikhail', lastName: 'Broun' }))
+
+
+function printArr(arr: unknown[]): void {
+    arr.forEach((element, index) => {
+        console.log(element, index);
+    });
+}
+
+
+
