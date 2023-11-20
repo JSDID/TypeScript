@@ -77,7 +77,15 @@ function printName(user) {
 }
 console.log(printName({ firstName: 'Mikhail', lastName: 'Broun' }));
 function printArr(arr) {
-    arr.forEach((element, index) => {
-        console.log(element, index);
+    arr.forEach((element) => {
+        console.log(element + 'Each');
     });
 }
+printArr([1, 2]);
+const pars = [['key1', 'value1'], ['key2', 'value2']];
+console.log(pars);
+const data1 = [1, true, 'script'];
+console.log(data1);
+const docs = [];
+docs.push(['sdsd', 'sd', 1, new Date(1992, 8, 22)]);
+console.log(docs);

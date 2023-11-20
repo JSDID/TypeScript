@@ -121,10 +121,19 @@ console.log(printName({ firstName: 'Mikhail', lastName: 'Broun' }))
 
 
 function printArr(arr: unknown[]): void {
-    arr.forEach((element, index) => {
-        console.log(element, index);
+    arr.forEach((element) => {
+        console.log(element + 'Each');
     });
 }
 
+printArr([1, 2]);
 
+const pars: [string, string][] = [['key1', 'value1'], ['key2', 'value2']];
+console.log(pars);
 
+const data1: [number, boolean, string] = [1, true, 'script'];
+console.log(data1);
+
+const docs: [string, string, number, Date][] = [];
+docs.push(['sdsd', 'sd', 1, new Date(1992, 8, 22)])
+console.log(docs);
