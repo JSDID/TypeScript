@@ -99,3 +99,35 @@ function printId(id) {
     }
 }
 console.log(printId('script'));
+const arr = [];
+function Welcome(person) {
+    if (Array.isArray(person)) {
+        console.log('Hello', person.join(''));
+        return 1;
+    }
+    else {
+        console.log('Hello', person);
+        return person;
+    }
+}
+var ShapeKin;
+(function (ShapeKin) {
+    ShapeKin[ShapeKin["CIRCEL"] = 0] = "CIRCEL";
+    ShapeKin[ShapeKin["SQUARE"] = 1] = "SQUARE";
+})(ShapeKin || (ShapeKin = {}));
+const myShape = ShapeKin.CIRCEL;
+myShape.toFixed();
+var StatusCode;
+(function (StatusCode) {
+    StatusCode[StatusCode["ERROR"] = 500] = "ERROR";
+    StatusCode[StatusCode["NOT__FOUND"] = 404] = "NOT__FOUND";
+    StatusCode[StatusCode["NOT_AUTH"] = 403] = "NOT_AUTH";
+})(StatusCode || (StatusCode = {}));
+function gradeDeveloper(user) {
+    if (user.lavel === "Junior") {
+        user.lavel = "Sinior";
+    }
+    else if (user.lavel === "Sinior") {
+        user.lavel = "Middle";
+    }
+}

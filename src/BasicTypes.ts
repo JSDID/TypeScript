@@ -163,3 +163,40 @@ function printId(id: number | string): void {
 }
 
 console.log(printId('script'));
+
+const arr: (number | string)[] = [];
+
+function Welcome(person: [string, string] | string): number | string {
+    if (Array.isArray(person)) {
+        console.log('Hello', person.join(''))
+        return 1;
+    } else {
+        console.log('Hello', person)
+        return person;
+    }
+}
+
+enum ShapeKin {
+    CIRCEL, // 0
+    SQUARE, // 1
+}
+
+const myShape = ShapeKin.CIRCEL
+myShape.toFixed();
+
+
+enum StatusCode {
+    ERROR = 500,
+    NOT__FOUND = 404,
+    NOT_AUTH = 403
+}
+
+function gradeDeveloper(user: { lavel: string }) {
+    if (user.lavel === "Junior") {
+        user.lavel = "Sinior"
+    } else if (user.lavel === "Sinior") {
+        user.lavel = "Middle"
+    }
+}
+
+
