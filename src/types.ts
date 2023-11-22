@@ -137,3 +137,16 @@ console.log(data1);
 const docs: [string, string, number, Date][] = [];
 docs.push(['sdsd', 'sd', 1, new Date(1992, 8, 22)])
 console.log(docs);
+
+type MyBoolean = false | true;
+type Pair = [string, string];
+type Pairs = Pair[];
+
+type DiffCar = {
+    wheels: 4;
+    brand: "BMW";
+    type: "Sedan";
+    isNew: false;
+    [key: string]: unknown;
+}
+
