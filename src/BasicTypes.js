@@ -89,3 +89,13 @@ console.log(data1);
 const docs = [];
 docs.push(['sdsd', 'sd', 1, new Date(1992, 8, 22)]);
 console.log(docs);
+const staticX = "lodaing";
+function printId(id) {
+    if (typeof id === 'string') {
+        console.log(id.toUpperCase());
+    }
+    else {
+        console.log(id);
+    }
+}
+console.log(printId('script'));
