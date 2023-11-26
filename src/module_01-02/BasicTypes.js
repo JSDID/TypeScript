@@ -1,8 +1,10 @@
 "use strict";
 let x = 20;
 let y = "script";
+let r = null;
 console.log(x);
 console.log(y);
+console.log(r);
 const numbers = [1, 2, 3, 4, 5];
 console.log(numbers);
 const string = ["s", "c", "r", "i", "p", "t"];

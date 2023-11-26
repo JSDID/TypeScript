@@ -1,9 +1,11 @@
 
 let x: number = 20;
 let y: string = "script";
+let r = null;
 
 console.log(x);
 console.log(y);
+console.log(r);
 
 const numbers: Array<number> = [1, 2, 3, 4, 5];
 console.log(numbers);
