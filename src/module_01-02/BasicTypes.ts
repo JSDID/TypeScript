@@ -24,7 +24,7 @@ mobile.toUpperCase();
 console.log(mobile);
 
 // unknown - когда не знаем
-let dev: unknown = 'Xiaomi';
+let dev: unknown = 1;
 // dev.toUpperCase(); - только в случае уточнения
 if (typeof dev === 'string') {
     dev.toUpperCase();
@@ -36,6 +36,32 @@ console.log(numbers);
 
 const string: Array<string> = ["s", "c", "r", "i", "p", "t"];
 console.log(string);
+
+// Типизация функций
+function greet(name: string) {
+    console.log("Hello, " + name.toUpperCase() + " !");
+}
+
+console.log(greet('Alex'));
+
+const sum = (a: number, b: number): number => a + b;
+console.log(sum(5, 5));
+
+// Возращаемые значения
+
+// void - когда завершиться
+function log(name: string, userId?: number): void {
+    console.log("Hello", name, userId);
+}
+console.log(log('Script -', 2023));
+
+
+function avarage(num: number[]) {
+    const sum = num.reduce((current, total) => current + total, 0);
+    return sum / num.length;
+}
+
+console.log(avarage([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 interface Car {
     wheels: number;
@@ -58,12 +84,3 @@ car.go = true;
 console.log(car);
 
 
-function greet(name: string) {
-    console.log("Hello, " + name.toUpperCase() + " !");
-}
-
-console.log(greet('Alex'));
-
-
-const sum = (a: number, b: number): number => a + b;
-console.log(sum(2, 2));
