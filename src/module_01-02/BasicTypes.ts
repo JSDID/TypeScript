@@ -20,7 +20,7 @@ interface Car {
 }
 
 const car: Car = {
-    wheels: 4,
+    wheels: 5,
     brand: "BMW",
     type: "Sedan",
     isNew: false,
@@ -37,3 +37,7 @@ function greet(name: string) {
 }
 
 console.log(greet('Alex'));
+
+
+const sum = (a: number, b: number): number => a + b;
+console.log(sum(2, 2));

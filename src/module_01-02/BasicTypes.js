@@ -8,7 +8,7 @@ console.log(numbers);
 const string = ["s", "c", "r", "i", "p", "t"];
 console.log(string);
 const car = {
-    wheels: 4,
+    wheels: 5,
     brand: "BMW",
     type: "Sedan",
     isNew: false,
@@ -20,3 +20,5 @@ function greet(name) {
     console.log("Hello, " + name.toUpperCase() + " !");
 }
 console.log(greet('Alex'));
+const sum = (a, b) => a + b;
+console.log(sum(2, 2));
