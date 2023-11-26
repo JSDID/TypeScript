@@ -10,3 +10,22 @@ console.log(numbers);
 
 const string: Array<string> = ["s", "c", "r", "i", "p", "t"];
 console.log(string);
+
+interface Car {
+    wheels: number;
+    brand: string;
+    type: string;
+    isNew?: boolean;
+    [key: string]: unknown;
+}
+
+const car: Car = {
+    wheels: 4,
+    brand: "BMW",
+    type: "Sedan",
+    isNew: false,
+}
+
+car.wheels = 10;
+car.go = true;
+console.log(car);
