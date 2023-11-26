@@ -1,11 +1,35 @@
 
 let x: number = 20;
 let y: string = "script";
-let r = null;
+
+// boolean
+let t = true;
+let f = false;
+
+// nothing
+let u: undefined = undefined;
+let n: null = null;
 
 console.log(x);
 console.log(y);
-console.log(r);
+console.log(t);
+console.log(f);
+console.log(n + " - Ничего");
+console.log(u + " - Ничего");
+
+// any - чем угодно когда не знаем
+let mobile: any = 1;
+mobile = 'Samsung';
+mobile.toUpperCase();
+console.log(mobile);
+
+// unknown - когда не знаем
+let dev: unknown = 'Xiaomi';
+// dev.toUpperCase(); - только в случае уточнения
+if (typeof dev === 'string') {
+    dev.toUpperCase();
+}
+console.log(dev);
 
 const numbers: Array<number> = [1, 2, 3, 4, 5];
 console.log(numbers);
