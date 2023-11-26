@@ -58,10 +58,12 @@ console.log(log('Script -', 2023));
 
 function avarage(num: number[]) {
     const sum = num.reduce((current, total) => current + total, 0);
-    return sum / num.length;
+    console.log(sum);
+    //  return sum / num.length;
 }
 
-console.log(avarage([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+console.log(avarage([1, 2, 3, 4, 5]));
+
 
 interface Car {
     wheels: number;
@@ -83,4 +85,37 @@ car.go = true;
 
 console.log(car);
 
+
+// Функция как обьект 
+
+// Обезательные параметры
+function printPoint(point: { x: string, y: string }): void {
+    console.log(`Coorainate of the point is x : ${point.x} and y: ${point.y}`);
+}
+
+const obj1 = {
+    x: '1',
+    y: '2'
+}
+
+
+const obj2 = {
+    x: 1,
+    y: 2
+}
+
+console.log(printPoint(obj1));
+
+// Не обезательные параметры
+function printName(user: {
+    firstName: string,
+    lastName?: string
+}): void {
+    console.log('Hello', user.firstName.toLocaleUpperCase());
+    if (user.lastName) {
+        console.log('Nice to meet you Mr', user.lastName?.toLocaleUpperCase());
+    }
+}
+
+console.log(printName({ firstName: 'Mikhail', lastName: 'Broun' }))
 
