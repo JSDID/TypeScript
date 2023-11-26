@@ -28,4 +28,12 @@ const car: Car = {
 
 car.wheels = 10;
 car.go = true;
+
 console.log(car);
+
+
+function greet(name: string) {
+    console.log("Hello, " + name.toUpperCase() + " !");
+}
+
+console.log(greet('Alex'));
