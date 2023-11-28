@@ -163,3 +163,21 @@ function Welcome(person: [string, string] | string): number | string {
 }
 
 console.log('Diana', 'Kate');
+
+// Enum 
+enum ShapeKind {
+    Circle,
+    Square
+}
+
+const myShape = ShapeKind.Circle;
+interface Square {
+    kind: ShapeKind,
+    slideLength: number
+}
+
+enum StatusCode {
+    ERROR = 500,
+    NOT_FOUND = 404,
+    NOT_AUTH = 403
+}
