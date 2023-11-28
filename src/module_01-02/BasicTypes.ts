@@ -124,3 +124,14 @@ const pars: [string, string][] = [['key1', 'value1'], ['key2', 'value2']];
 const data: [number, boolean, string] = [1, true, 'lodash'];
 const doc: [string, string, number, Date][] = [];
 doc.push(['Alex', 'Neb', 12, new Date(1992, 22, 8)]);
+
+// Алисы
+type MyBoolean = false | true;
+type Pair = [string, string];
+type Pairs = Pair[];
+
+type Cars = {
+    wheels: number;
+    brand: string;
+    [key: number]: unknown;
+}
