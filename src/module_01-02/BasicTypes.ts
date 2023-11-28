@@ -64,7 +64,6 @@ function avarage(num: number[]) {
 
 console.log(avarage([1, 2, 3, 4, 5]));
 
-
 interface Car {
     wheels: number;
     brand: string;
@@ -84,7 +83,6 @@ car.wheels = 10;
 car.go = true;
 
 console.log(car);
-
 
 // Функция как обьект 
 
@@ -139,7 +137,6 @@ type Cars = {
 // Union - узкие типы для значений
 type Status = 'ok' | 'loading' | 'error';
 const staticX: Status = 'loading';
-
 
 // void - ничего не возращаем
 function pringId(id: number | string): void {
