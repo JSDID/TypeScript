@@ -135,3 +135,34 @@ type Cars = {
     brand: string;
     [key: number]: unknown;
 }
+
+// Union - узкие типы для значений
+type Status = 'ok' | 'loading' | 'error';
+const staticX: Status = 'loading';
+
+
+// void - ничего не возращаем
+function pringId(id: number | string): void {
+    // сужение типов 
+    if (typeof id === 'string') {
+        // надо проверить
+        console.log(id.toUpperCase());
+    } else {
+        console.log(id);
+    }
+}
+
+console.log(pringId(1));
+
+// number - что возращаем 
+function Welcome(person: [string, string] | string): number | string {
+    if (Array.isArray(person)) {
+        console.log('Hello', person.join(' '));
+        return 1;
+    } else {
+        console.log('Hello', person);
+        return person;
+    }
+}
+
+console.log('Diana', 'Kate');
