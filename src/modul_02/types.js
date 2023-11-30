@@ -1,18 +1,6 @@
 "use strict";
 console.clear();
 console.log('modul_2');
-// const example: Union5 = {}
-// type User = {
-//   readonly email: string,
-//   readonly login: string,
-//   password: string,
-// }
-// type Person = {
-//   readonly firstName: string,
-//   lastName: string,
-//   phone?: string,
-//   yearOfBirth?: number,
-// }
 // type Employee = {
 //   contractStart: Date,
 // } & User & Person
@@ -24,3 +12,9 @@ console.log('modul_2');
 //   say(): void,
 //   code?: (arg: string) => void,
 // } & Employee
+// В чем разница между Интерфейсами и Алясами 
+// 1. Не можем второй раз создать глобально
+// 2. Можно создавать Интерфейс
+// Интерфейс
+// 1. Когда хотим расширать нужен Интерфейс
+// 2. Классах используеться implements 
