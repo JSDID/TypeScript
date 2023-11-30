@@ -1,13 +1,16 @@
+console.clear();
+console.log('modul_2');
+
 
 interface User {
     isOnline: boolean
 }
 
-interface Window {
-    isAuth: boolean
-}
+// interface Window {
+//     isAuth: boolean
+// }
 
-window.isAuth
+// window.isAuth
 
 interface User {
     readonly name: string,

@@ -1,3 +1,5 @@
+console.clear();
+console.log('modul_1');
 
 let x: number = 20;
 let y: string = "script";

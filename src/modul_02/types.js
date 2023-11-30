@@ -1,5 +1,6 @@
 "use strict";
-window.isAuth;
+console.clear();
+console.log('modul_2');
 // const example: Union5 = {}
 // type User = {
 //   readonly email: string,

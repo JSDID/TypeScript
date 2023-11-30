@@ -1,4 +1,6 @@
 "use strict";
+console.clear();
+console.log('modul_1');
 let x = 20;
 let y = "script";
 // boolean
