@@ -181,3 +181,4 @@ enum StatusCode {
     NOT_FOUND = 404,
     NOT_AUTH = 403
 }
+
