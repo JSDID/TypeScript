@@ -109,7 +109,7 @@ function Welcome(person) {
         return person;
     }
 }
-console.log('Diana', 'Kate');
+console.log(Welcome(['Diana', 'Kate']));
 // Enum 
 var ShapeKind;
 (function (ShapeKind) {

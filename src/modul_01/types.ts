@@ -162,7 +162,7 @@ function Welcome(person: [string, string] | string): number | string {
     }
 }
 
-console.log('Diana', 'Kate');
+console.log(Welcome(['Diana', 'Kate']));
 
 // Enum 
 enum ShapeKind {
