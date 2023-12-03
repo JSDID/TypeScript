@@ -39,9 +39,7 @@ interface Developer extends Exployee {
     code?: (arg: string) => void
 }
 
-// class MyDeveloper implements Developer {}
-
-// Подробнее об Алиасах 
+// Алиасы 
 
 type Union1 = 'a' | 'b' | 'c' | 'd';
 type Union2 = 'a' | 'e' | 'c' | 'i';
@@ -49,12 +47,6 @@ type Union3 = Union1 | Union2; // all variants
 type Union4 = Union1 & Union2; // a | c
 
 type Union5 = { a: string, b: string, c: number } & { a: string, t: boolean, z: null }
-
-// type Employee = {
-//   contractStart: Date,
-// } & User & Person
-
-// // const user1: Employee = {}
 
 // type Developer = {
 //   skills: string[],
@@ -68,5 +60,5 @@ type Union5 = { a: string, b: string, c: number } & { a: string, t: boolean, z: 
 // 1. Не можем второй раз создать глобально
 // 2. Можно создавать Интерфейс
 // Интерфейс
-// 1. Когда хотим расширать нужен Интерфейс
-// 2. Классах используеться implements 
+// 1. Когда хотим расширать нужен Интерфейс (extends)
+// 2. Классах используеться (implements) 
