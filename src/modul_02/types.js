@@ -47,9 +47,23 @@ function example3(x) {
         x.concat([]);
     }
 }
+// Type Guards - защитники 
+function isFish(pet) {
+    // as - утверждение
+    return pet.swim !== undefined;
+}
 function move(animal) {
-    if ('swim' in animal) {
+    if (isFish(animal)) {
         return animal.swim();
     }
     return animal.fly();
 }
+// function isNull(val: any): val is null {
+//   return !val
+// }
+// const empty = ""
+// const zero = 0
+// if (isNull(empty)) {
+//   empty
+// }
+// isNull(zero) 

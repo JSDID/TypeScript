@@ -100,12 +100,29 @@ function example3(x: number[] | Date) {
 type Fish = { swim: () => void };
 type Bird = { fly: () => void };
 
+// Type Guards - защитники 
+
+function isFish(pet: Fish | Bird): pet is Fish {
+    // as - утверждение
+    return (pet as Fish).swim !== undefined;
+  }
+  
 function move(animal: Fish | Bird) {
-    if ('swim' in animal) {
+    if (isFish(animal)) {
         return animal.swim()
     }
 
     return animal.fly();
-}
-
-
+    }
+  
+  // function isNull(val: any): val is null {
+  //   return !val
+  // }
+  
+  // const empty = ""
+  // const zero = 0
+  // if (isNull(empty)) {
+  //   empty
+  // }
+  
+  // isNull(zero) 
