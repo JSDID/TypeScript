@@ -58,12 +58,3 @@ function move(animal) {
     }
     return animal.fly();
 }
-// function isNull(val: any): val is null {
-//   return !val
-// }
-// const empty = ""
-// const zero = 0
-// if (isNull(empty)) {
-//   empty
-// }
-// isNull(zero) 
