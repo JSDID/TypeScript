@@ -58,3 +58,15 @@ function move(animal) {
     }
     return animal.fly();
 }
+// asserts user is User3 - пользователь это пользователь а это строка
+function assertDisplayName(user) {
+    // Если у пользователя отсуствует то тогда выбрасываем ошибку
+    if (!user.displayName)
+        throw new Error('User has no displayName field');
+    // Если все нормально 
+    console.log(user.displayName.toLowerCase());
+}
+function logUserByDisplayName(user) {
+    assertDisplayName(user);
+    console.log(user.displayName.toUpperCase());
+}

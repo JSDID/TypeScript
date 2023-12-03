@@ -2,7 +2,7 @@ console.clear();
 console.log('modul_2');
 
 
-interface User {
+interface User1 {
     isOnline: boolean
 }
 
@@ -12,7 +12,7 @@ interface User {
 
 // window.isAuth
 
-interface User {
+interface User2 {
     readonly name: string,
     readonly email: string,
     readonly login: string,
@@ -27,7 +27,7 @@ interface Person {
 }
 
 
-interface Exployee extends User, Person {
+interface Exployee extends User1, Person {
     contractStart: Date
 }
 
@@ -106,7 +106,7 @@ function isFish(pet: Fish | Bird): pet is Fish {
     // as - утверждение
     return (pet as Fish).swim !== undefined;
 }
-  
+
 function move(animal: Fish | Bird) {
     if (isFish(animal)) {
         return animal.swim()
@@ -114,5 +114,25 @@ function move(animal: Fish | Bird) {
 
     return animal.fly();
 }
-  
- 
+
+// Asserts - алтернатива этим функциям. 
+// Выбрасывающие ошибки
+
+type User3 = {
+    name: string,
+    displayName: string | null,
+}
+
+// asserts user is User3 - пользователь это пользователь а это строка
+function assertDisplayName(user: User3): asserts user is User3 & { displayName: string } {
+    // Если у пользователя отсуствует то тогда выбрасываем ошибку
+    if (!user.displayName) throw new Error('User has no displayName field');
+    // Если все нормально 
+    console.log(user.displayName.toLowerCase());
+}
+
+function logUserByDisplayName(user: User3) {
+    assertDisplayName(user);
+    console.log(user.displayName.toUpperCase());
+}
+
