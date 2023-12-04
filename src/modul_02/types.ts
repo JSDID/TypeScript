@@ -201,9 +201,22 @@ type JSONArray = JSONValue[]
 
 type JSONValue = JSONPrimitive | JSONObject | JSONArray;
 
-function isJSON(arg: JSONValue) {}
+function isJSON(arg: JSONValue) { }
 
 isJSON("hi")
 isJSON(1)
-isJSON({ a: [123], v: { x: 1}})
+isJSON({ a: [123], v: { x: 1 } })
 isJSON([1, { x: '' }])
+
+// Оператор 
+
+let word: string | null = null;
+
+const num: number = 25;
+if (num > 5) {
+    word = ''
+}
+
+console.log(word!.toLowerCase());
+
+
